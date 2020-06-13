@@ -13,12 +13,24 @@ import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { vi_VN } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
 import vi from '@angular/common/locales/vi';
+import { HeaderComponent } from './layout/header/header.component';
+import { BreabcrumbComponent } from './layout/breabcrumb/breabcrumb.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { LoginDialogComponent } from './users/login-dialog/login-dialog.component';
+import { RegisterDialogComponent } from './users/register-dialog/register-dialog.component';
+import { ForgotDialogComponent } from './users/forgot-dialog/forgot-dialog.component';
 
 registerLocaleData(vi);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    BreabcrumbComponent,
+    FooterComponent,
+    LoginDialogComponent,
+    RegisterDialogComponent,
+    ForgotDialogComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'rvhl-ssr' }),
